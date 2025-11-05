@@ -1,5 +1,8 @@
 # XY/ORAS wild Pokemon RNG made EASY
 
+**As of November 2025, this is the most up to date guide for RNG abusing wild encounters in Gen 6 games.
+Feel free to use whatever resources you find useful, but people will be less likely to understand your problem and help you with troubleshooting.**
+
 * Your 2ds/3ds system must run **[Custom Firmware (CFW)](https://3ds.hacks.guide/)** in order to follow this guide.
 * This guide is about RNG abusing for **single** wild Pokemon. It **WORKS** with Friend Safari and it **WORKS** on Emulator too.
 * If you want to RNG for **Horde encounters**, use this **[guide](https://github.com/Bambo-Rambo/RNG-Guides/blob/main/HordeRNG.md)** instead.
@@ -14,8 +17,13 @@
 ### Recommended to have in game
 * Repels (100 steps)
 * Having acquired the Exp. Share
-* Having acquired the Shiny Charm if going for shinies
 * A "Synchronizer" in the 1st slot of your party with the desired nature
+
+### Further in game preperations
+* You **MUST** get rid of temporary NPCs that are either part of the story, or just give you an item once, then disappear.
+Examples of such NPCs include: **your friends** in XY that appear in various cases through the story, 
+**May** at Route 101 explaining you how to approach hidden Pokemon, **Aarune** at Fiery Path who gives you TM96 after defeating Maxie/Archie at Mt. Chimney and many more.
+If you have finished the story, chances are you don't need to worry about this, but still make sure there are no events like these still waiting to be triggered at the location of the RNG.
 * One completely empty side in the bag. I discarded all my berries since I don't need them
 
 ![](https://raw.githubusercontent.com/Bambo-Rambo/RNG-Guides/main/Images/Wild/Wild1.png)
@@ -97,7 +105,7 @@ Input your **TinyMT Seed**.
 
 Choose your location **first** (very important for accurate results) and **then** set **Min Index** to whatever your current **Advances** (not MT Advances) are.
 
-Finally put the number of Pokemon in your party (3 in my case).
+Finally put the total number of Pokemon in your party (3 in my case).
 The rest should be self explanatory.
 
 Press **Generate** and check the results.
@@ -123,7 +131,7 @@ This is because when you close the bag, 27 advances will be consumed so you need
 
 * Turning on/off the Exp. Share, advances the TinyMT
 * Giving one of your Pokemon a new item to hold (even if it already holds something), advances the TinyMT
-* Attempting to teach one of your Pokemon a new TM/HM move and then **reject it** (don't actually learn the move), advances the TinyMT
+* Attempting to teach one of your Pokemon a new TM/HM move and then **reject it** (don't actually learn the move), advances the TinyMT (you **need** to reach the move selection screen then press B to exit)
 
 Each of these actions causes different (predictable) RNG jumps and the tool combines them to calculate the shortest path.
 
@@ -167,3 +175,42 @@ Hold down any arrow on the D-pad (except the one your character is looking at) a
 * The delay for 3DS RNG Tool in Kalos routes 9 and 17, is 20 instead of 6.
 * Tiny Finder supposes that all NPCs in an area are active. 
 If you fight one of them accidentaly, leave the area and return to reset their active state.
+
+### Common FAQ:
+**Q**: Is the Shiny charm necessary for shinies?
+
+**A**: No
+
+**Q**: Do I need to be on the exact same tile shown in the albums for my location?
+
+**A**: No, but try to be as close as possible to the ones indicated.
+
+**Q**: I don't have a synchronizer in the 1st slot of my party. Will this cause problems?
+
+**A**: No
+
+**Q**: My 1st party Pokemon has an ability that affects slots/wild encounters. What to do?
+
+**A**: Tiny Finder does not account for encounter affecting abilities (except Synchronize of course) like Magnet Pull, Intimidate, Pressure, Illuminate etc, so don't use any of these.
+
+**Q**: I have 5 Pokemon in my party, 3 of which are KOed. What number should I put in Tiny Finder.
+
+**A**: 5
+
+**Q**: I just defeated an NPC in the location of the RNG. Am I screwed?
+
+**A**: Leave the area, come back, save the game and start from the very beggining.
+
+
+### Troubleshooting
+Join the ![Pokemon RNG discord server](https://www.discord.gg/d8JuAvg) and create a thread in the ```#3ds-games-questions``` chanel.
+
+Gen 6 wild RNG is quite niche, and not many people can help you, so try following these steps precisely to increase your chances of being helped:
+
+* Describe your problem and provide as much info as possible.
+We need to know the in-game location of your RNG, your target Pokemon, whether or not you have cleared all the temporary NPCs, whether or not you have defeated any (running) NPCs recently etc.
+
+* **Most important:** we need to know the exact step you are having trouble with.
+Messages like "*I am trying to RNG a wild Riolu at Route 22 in XY but I fail. Please Help!*" are lazy, require that the helper asks for more info, and you are **not** likey to be helped.
+
+* Providing screenshots of both Tiny Finder and your 3ds, greatly increase your chance of getting help.
